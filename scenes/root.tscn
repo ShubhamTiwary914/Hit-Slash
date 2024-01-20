@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0ptricovu4ft"]
+
+[ext_resource type="Script" path="res://scripts/globals/sceneManager.gd" id="1_v1r5w"]
+
+[node name="root" type="Node2D"]
+
+[node name="globals" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1150.0
+offset_bottom = 648.0
+
+[node name="scenes" type="Control" parent="globals"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_v1r5w")
+
+[node name="ui" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1154.0
+offset_bottom = 650.0
+
+[node name="back" type="Node2D" parent="ui"]
+
+[node name="front" type="Node2D" parent="ui"]
+
+[node name="environment" type="Node2D" parent="."]
+
+[node name="background" type="Node2D" parent="environment"]
+
+[node name="statics" type="Node2D" parent="environment"]
+
+[node name="interacts" type="Node2D" parent="."]
+
+[node name="players" type="Node2D" parent="interacts"]
+
+[node name="enemies" type="Node2D" parent="interacts"]
+
+[node name="items" type="Node2D" parent="interacts"]
